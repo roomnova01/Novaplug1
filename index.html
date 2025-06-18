@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novaplug | Aesthetic Room Decor for All Styles</title>
+    <meta name="description" content="Premium bedroom decor for feminine, masculine and unique styles - Amazon affiliate store">
+    
+    <!-- Enhanced SEO Meta -->
+    <meta name="keywords" content="aesthetic decor, Amazon home products, room design, lighting, furniture">
+    <link rel="canonical" href="https://novaplug.com" />
+    
+    <!-- Amazon Compliance -->
+    <meta name="amazon-associates-tracking-id" content="novaplug21-21">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Novaplug",
+      "url": "https://novaplug.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            /* Brand Colors */
+            --primary: #6a3093;
+            --primary-light: #9d65c9;
+            --pink-accent: #d48a9d;
+            --blue-accent: #5d8aa8;
+            --dark: #1a1a1a;
+            --silver: #f5f5f7;
+            --text: #333;
+            --text-light: #777;
+            
+            /* Default Light Mode */
+            --bg: var(--silver);
+            --card-bg: white;
+            --accent: var(--primary);
+            --header-bg: white;
+        }
+
+        [data-theme="dark"] {
+            --bg: #252525;
+            --card-bg: #333;
+            --header-bg: #222;
+            --text: #f0f0f0;
+            --text-light: #ccc;
+            --accent: var(--primary-light);
+            --card-border: #444;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            transition: all 0.3s ease;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--header-bg);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a.active:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .mode-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text);
+            transition: transform 0.3s;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0 50px;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .style-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .style-btn {
+            padding: 12px 24px;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .style-btn.feminine {
+            background: #f8e8e8;
+            color: #c55d7d;
+        }
+
+        .style-btn.masculine {
+            background: #e6f0f7;
+            color: #3a6b8a;
+        }
+
+        .style-btn.unique {
+            background: #f0e6f7;
+            color: #6a3093;
+        }
+
+        .style-btn.active {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: var(--card-bg);
+            border: 1px solid rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: transparent;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px 0 50px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        [data-theme="dark"] .product-card {
+            border-color: var(--card-border);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .urgency-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #e63946;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            z-index: 2;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .product-price {
+            color: var(--accent);
+            font-weight: 700;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+
+        .discount-badge {
+            background: #4caf50;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .product-rating {
+            color: #ffb400;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .amazon-btn {
+            display: block;
+            background: linear-gradient(135deg, #FF9900, #FFAD33);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(255,153,0,0.3);
+        }
+
+        .amazon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,153,0,0.4);
+        }
+
+        .amazon-btn:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                rgba(255,255,255,0.3) 0%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(30deg);
+            transition: all 0.3s;
+        }
+
+        .amazon-btn:hover:after {
+            left: 100%;
+        }
+
+        .btn-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .prime-badge {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-left: 8px;
+        }
+
+        footer {
+            background: var(--card-bg);
+            padding: 40px 0 20px;
+            margin-top: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-email {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .privacy-message {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-align: center;
+            max-width: 800px;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(0,0,0,0.05);
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            line-height: 1.7;
+        }
+
+        /* Section transition styles */
+        .style-section {
+            transition: opacity 0.3s ease;
+        }
+
+        .style-section[style*="display: none"] {
+            display: none !important;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .style-section[style*="display: block"] {
+            opacity: 1;
+            height: auto;
+            overflow: visible;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-auto-flow: column;
+                grid-auto-columns: minmax(280px, 1fr);
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 15px;
+                padding-bottom: 20px;
+            }
+
+            .product-card {
+                scroll-snap-align: start;
+            }
+
+            .filter-bar {
+                overflow-x: auto;
+                padding-bottom: 10px;
+                scrollbar-width: none;
+            }
+
+            .filter-bar::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                gap: 10px;
+                font-size: 0.9rem;
+            }
+
+            .style-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Novaplug</a>
+            
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#feminine">Feminine</a>
+                <a href="#masculine">Masculine</a>
+                <a href="#unique">Unique</a>
+            </nav>
+            
+            <div class="controls">
+                <button class="mode-toggle" aria-label="Toggle dark mode">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="hero-title">Live With Mystery & Style</h1>
+            <p class="hero-subtitle">Discover premium aesthetic decor for every personal style</p>
+            
+            <div class="style-buttons">
+                <button class="style-btn feminine active">Feminine Decor</button>
+                <button class="style-btn masculine">Masculine Decor</button>
+                <button class="style-btn unique">Unique Styles</button>
+            </div>
+        </section>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="under-50">Under £50</button>
+            <button class="filter-btn" data-filter="prime">Prime</button>
+            <button class="filter-btn" data-filter="led">LED</button>
+            <button class="filter-btn" data-filter="storage">Storage</button>
+        </div>
+
+        <!-- Feminine Decor Section -->
+        <section id="feminine" class="style-section">
+            <h2>Feminine Aesthetic Essentials</h2>
+            <div class="products-grid">
+                <!-- Pink Rug -->
+                <div class="product-card" data-tags="under-50 prime">
+                    <span class="urgency-badge">Popular</span>
+                    <img src="https://m.media-amazon.com/images/I/81VLQuIyqkL.__AC_SX300_SY300_QL70_ML2_.jpg" 
+                         alt="Small Pink Rug for Bedroom" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Pink Shaggy Area Rug</h3>
+                        <div class="product-price">
+                            £13.28
+                            <span class="original-price">£16.99</span>
+                            <span class="discount-badge">22% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://amzn.to/3SVeKBm" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                           <span class="prime-badge">Prime</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Neon Sign -->
+                <div class="product-card" data-tags="led prime">
+                    <img src="https://m.media-amazon.com/images/I/71s487N9WeL._AC_SX679_.jpg" 
+                         alt="Good Vibes Only Neon Sign" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Good Vibes Neon Sign</h3>
+                        <div class="product-price">£32.99</div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://www.amazon.co.uk/Beautiful-Bedroom-Decoration-Birthday-Shopping/dp/B0F3CXQ434?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LED Mirror -->
+                <div class="product-card" data-tags="led">
+                    <span class="urgency-badge">Limited Stock</span>
+                    <img src="https://m.media-amazon.com/images/I/718lP46CWcL._AC_SX679_.jpg" 
+                         alt="Dripex LED Full Length Mirror" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">LED Full Length Mirror</h3>
+                        <div class="product-price">£109.99</div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://www.amazon.co.uk/Dripex-Dressing-160x50cm-Standing-Lighting/dp/B0DJLWSPJP?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TV LED Lights -->
+                <div class="product-card" data-tags="led under-50 prime">
+                    <span class="urgency-badge">Amazon's Choice</span>
+                    <img src="https://m.media-amazon.com/images/I/71A+g4cDtFL._AC_SX679_.jpg" 
+                         alt="MATICOD LED Lights for TV" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">TV LED Backlight Strip</h3>
+                        <div class="product-price">£7.49</div>
+                        <div class="product-rating">★★★★☆ (4.4)</div>
+                        <a href="https://amzn.to/3G3cEMD" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                           <span class="prime-badge">Prime</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Galaxy Projector -->
+                <div class="product-card" data-tags="led">
+                    <span class="urgency-badge">Amazon's Choice</span>
+                    <img src="https://m.media-amazon.com/images/I/81xkykz9RpL._AC_SX679_.jpg" 
+                         alt="Galaxy Projector Star Projector" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy Star Projector</h3>
+                        <div class="product-price">£35.99</div>
+                        <div class="product-rating">★★★★☆ (4.4)</div>
+                        <a href="https://amzn.to/4l3eywl" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Macrame Wall Hanging -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/71tsiDSA-BL._AC_SX679_.jpg" 
+                         alt="Betylifoy Macrame Wall Hanging" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Boho Macrame Wall Hanging</h3>
+                        <div class="product-price">£18.99</div>
+                        <div class="product-rating">★★★★☆ (4.4)</div>
+                        <a href="https://amzn.to/4e3Gope" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View Options</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sunset Lamp -->
+                <div class="product-card" data-tags="led under-50">
+                    <img src="https://m.media-amazon.com/images/I/718kPejU72L._AC_SX679_.jpg" 
+                         alt="GY Sunset lamp" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Sunset Projection Lamp</h3>
+                        <div class="product-price">
+                            £14.44
+                            <span class="original-price">£18.99</span>
+                            <span class="discount-badge">24% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.2)</div>
+                        <a href="https://amzn.to/3HGNvIp" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating Shelf with Neon -->
+                <div class="product-card" data-tags="led under-50">
+                    <img src="https://m.media-amazon.com/images/I/71ZbvdWUJIL._AC_SX679_.jpg" 
+                         alt="GEEZY Black Floating Shelf" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">LED Neon Floating Shelf</h3>
+                        <div class="product-price">
+                            £8.49
+                            <span class="original-price">£8.99</span>
+                        </div>
+                        <div class="product-rating">★★★☆☆ (2.8)</div>
+                        <a href="https://amzn.to/4nmfwFs" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cherry Blossom Vines -->
+                <div class="product-card" data-tags="under-50">
+                    <img src="https://m.media-amazon.com/images/I/61aoIyLCpyL._AC_SX679_.jpg" 
+                         alt="UNIQU Cherry Blossom Flower Vines" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Artificial Cherry Blossom Vines</h3>
+                        <div class="product-price">£13.99</div>
+                        <div class="product-rating">★★★☆☆ (3.6)</div>
+                        <a href="https://amzn.to/44i0okN" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bathroom Organizer -->
+                <div class="product-card" data-tags="storage under-50">
+                    <img src="https://m.media-amazon.com/images/I/71HLUI8Rr3L._AC_SX679_.jpg" 
+                         alt="V-Kitpater Bathroom Organiser" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Acrylic Makeup Organizer</h3>
+                        <div class="product-price">
+                            £15.19
+                            <span class="original-price">£15.99</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.4)</div>
+                        <a href="https://amzn.to/4lbq3kD" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View Options</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Masculine Decor Section -->
+        <section id="masculine" class="style-section">
+            <h2>Masculine Decor Collection</h2>
+            <div class="products-grid">
+                <!-- Sofa Bed -->
+                <div class="product-card" data-tags="storage prime">
+                    <img src="https://m.media-amazon.com/images/I/71saC1ablYL._AC_SX679_.jpg" 
+                         alt="DURASPACE Sofa Bed Sleeper" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">DURASPACE Sofa Bed Sleeper</h3>
+                        <div class="product-price">£299.99</div>
+                        <div class="product-rating">★★★★☆ (4.3)</div>
+                        <a href="https://amzn.to/44i80DM" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View Options</span>
+                           <span class="prime-badge">Prime</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LED Strip Lights -->
+                <div class="product-card" data-tags="led under-50 prime">
+                    <span class="urgency-badge">Sale</span>
+                    <img src="https://m.media-amazon.com/images/I/71e6r9BL8bL._AC_SX679_.jpg" 
+                         alt="Cefrank RGBW LED Strip Lights" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Cefrank RGBW LED Strip Lights</h3>
+                        <div class="product-price">
+                            £36.97
+                            <span class="original-price">£39.97</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://amzn.to/4l6Zw82" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                           <span class="prime-badge">Prime</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gaming Chair -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/71qbfGS+oRL._AC_SX679_.jpg" 
+                         alt="ELFORDSON Gaming Chair" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Massage Gaming Chair</h3>
+                        <div class="product-price">£99.99</div>
+                        <div class="product-rating">★★★★☆ (3.8)</div>
+                        <a href="https://amzn.to/44hMKhr" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Himalayan Salt Lamp -->
+                <div class="product-card" data-tags="led under-50">
+                    <img src="https://m.media-amazon.com/images/I/71xqTSKS49L._AC_SX679_.jpg" 
+                         alt="Auraglow Himalayan Pink Salt Lamp" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Himalayan Salt Crystal Lamp</h3>
+                        <div class="product-price">
+                            £8.49
+                            <span class="original-price">£9.99</span>
+                            <span class="discount-badge">15% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.3)</div>
+                        <a href="https://amzn.to/407d5fG" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Touch Control Table Lamp -->
+                <div class="product-card" data-tags="led under-50 prime">
+                    <span class="urgency-badge">Amazon's Choice</span>
+                    <img src="https://m.media-amazon.com/images/I/712PetiDYpL._AC_SX679_.jpg" 
+                         alt="Jayencer Touch Control Table Lamp" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Dimmable Touch Control Lamp</h3>
+                        <div class="product-price">
+                            £16.99
+                            <span class="original-price">£19.99</span>
+                            <span class="discount-badge">15% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://amzn.to/4kTUNXN" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                           <span class="prime-badge">Prime</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Planetarium Star Projector -->
+                <div class="product-card" data-tags="led">
+                    <img src="https://m.media-amazon.com/images/I/91hjyhlIn0L.__AC_SY445_SX342_QL70_ML2_.jpg" 
+                         alt="Lysumurl Planetarium Star Projector" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy Star Projector</h3>
+                        <div class="product-price">£29.99</div>
+                        <div class="product-rating">★★★★☆ (3.9)</div>
+                        <a href="https://amzn.to/4jVn8vs" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Smart AI Table Lamp -->
+                <div class="product-card" data-tags="led">
+                    <span class="urgency-badge">Limited Deal</span>
+                    <img src="https://m.media-amazon.com/images/I/71UlaUsC43L.__AC_SY445_SX342_QL70_ML2_.jpg" 
+                         alt="Lepro TB1 AI Table Lamp" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Smart AI Table Lamp</h3>
+                        <div class="product-price">
+                            £52.48
+                            <span class="original-price">£69.99</span>
+                            <span class="discount-badge">25% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.4)</div>
+                        <a href="https://amzn.to/3TpMmr1" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating Shelves -->
+                <div class="product-card" data-tags="storage under-50">
+                    <img src="https://m.media-amazon.com/images/I/81BWI94-lyL._AC_SX679_.jpg" 
+                         alt="Homme Concept Floating Shelves" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Floating Shelves (Set of 3)</h3>
+                        <div class="product-price">£11.49</div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://amzn.to/3TrO6Qx" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View Options</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Smart Bedside Table -->
+                <div class="product-card" data-tags="storage led">
+                    <img src="https://m.media-amazon.com/images/I/81+SXkGGB1L._AC_SX679_.jpg" 
+                         alt="Homary Smart Bedside" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Bedside with Wireless Charging</h3>
+                        <div class="product-price">£239.99</div>
+                        <div class="product-rating">★★★★☆ (4.0)</div>
+                        <a href="https://amzn.to/4l9is6k" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Under Bed Storage -->
+                <div class="product-card" data-tags="storage under-50">
+                    <span class="urgency-badge">Limited Deal</span>
+                    <img src="https://m.media-amazon.com/images/I/71S1ikfUNuL._AC_SX679_.jpg" 
+                         alt="Nicecastle Under Bed Storage" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Under Bed Storage with Wheels</h3>
+                        <div class="product-price">
+                            £31.99
+                            <span class="original-price">£39.99</span>
+                            <span class="discount-badge">20% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.1)</div>
+                        <a href="https://amzn.to/4e9QV2n" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing Rack -->
+                <div class="product-card" data-tags="storage under-50">
+                    <img src="https://m.media-amazon.com/images/I/71ZmPCjzXAL._AC_SX679_.jpg" 
+                         alt="Venwemong Metal Clothing Rack" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Adjustable Garment Rail</h3>
+                        <div class="product-price">£24.99</div>
+                        <div class="product-rating">★★★☆☆ (2.9)</div>
+                        <a href="https://amzn.to/44ibpCy" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unique Styles Section -->
+        <section id="unique" class="style-section">
+            <h2>Unique Room Transformations</h2>
+            <div class="products-grid">
+                <!-- 3D Thundercloud LED -->
+                <div class="product-card" data-tags="led">
+                    <span class="urgency-badge">15% Off</span>
+                    <img src="https://m.media-amazon.com/images/I/81kw9DCiWBL.__AC_SY445_SX342_QL70_ML2_.jpg" 
+                         alt="3D Thundercloud LED Cloud Light" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">3D Thundercloud LED Light</h3>
+                        <div class="product-price">
+                            £59.49
+                            <span class="original-price">£69.99</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (74)</div>
+                        <a href="https://www.amazon.co.uk/Upgraded-Thundercloud-Multicolor-Changing-Atmosphere/dp/B0CNR3FHC2?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vinyl Record Clock -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/61y0YVC703L._AC_SX679_.jpg" 
+                         alt="Back to The Future Vinyl Record Clock" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Retro Vinyl Record LED Clock</h3>
+                        <div class="product-price">£31.90</div>
+                        <div class="product-rating">★★★★★ (4.8)</div>
+                        <a href="https://www.amazon.co.uk/wall-clock-Future-Record-decoration/dp/B083BWKMCH?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Moon Phase Mirror Set -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/71sOfSMOfiL._AC_SX679_.jpg" 
+                         alt="Moon Phase Mirror Set" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Bohemian Moon Phase Mirror Set</h3>
+                        <div class="product-price">£66.06</div>
+                        <div class="product-rating">★★★★☆ (70)</div>
+                        <a href="https://www.amazon.co.uk/WAKOSAN-Bohemian-Reflection-Multi-Angle-Installation/dp/B0CSYZ17KP?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VIP Lounge Neon Sign -->
+                <div class="product-card" data-tags="led">
+                    <img src="https://m.media-amazon.com/images/I/71E4b0O2q0L.__AC_SX300_SY300_QL70_ML2_.jpg" 
+                         alt="VIP Lounge Neon Signs" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">VIP Lounge Neon Sign</h3>
+                        <div class="product-price">
+                            £28.49
+                            <span class="original-price">£29.99</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.3)</div>
+                        <a href="https://www.amazon.co.uk/wanxingVIP-Lounge-Signs-Powered-Office/dp/B0BWHD46L1?tag=novaplug21-21" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Crystal Mirrored Shelf -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/51LmVoOFCCL._AC_SX679_.jpg" 
+                         alt="BML Crystal Mirrored Diamond Shelf" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Crystal Mirrored Floating Shelf</h3>
+                        <div class="product-price">£49.99</div>
+                        <div class="product-rating">★★★★☆ (4.5)</div>
+                        <a href="https://amzn.to/45ZNcCf" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Collage Kit -->
+                <div class="product-card" data-tags="under-50">
+                    <img src="https://m.media-amazon.com/images/I/913ADu1w+3L._AC_SX679_.jpg" 
+                         alt="Black White Wall Collage Kit" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Aesthetic Wall Collage Kit</h3>
+                        <div class="product-price">£7.95</div>
+                        <div class="product-rating">★★★★★ (5.0)</div>
+                        <a href="https://amzn.to/3ZACm1I" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hourglass Timer -->
+                <div class="product-card" data-tags="">
+                    <span class="urgency-badge">Limited Deal</span>
+                    <img src="https://m.media-amazon.com/images/I/71iDeOeNGkL._AC_SX679_.jpg" 
+                         alt="ELAINESTORE Hourglass Timer" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Hexagon Wooden Hourglass Timer</h3>
+                        <div class="product-price">
+                            £17.99
+                            <span class="original-price">£25.99</span>
+                            <span class="discount-badge">31% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (4.7)</div>
+                        <a href="https://amzn.to/4eitBzt" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Get Deal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LED Ivy Garland -->
+                <div class="product-card" data-tags="led under-50">
+                    <img src="https://m.media-amazon.com/images/I/71NvUyfpOlL._AC_SX679_.jpg" 
+                         alt="Artificial Ivy Leaf Garland with LED" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">LED Ivy Leaf Garland Lights</h3>
+                        <div class="product-price">£11.98</div>
+                        <div class="product-rating">★★★★☆ (4.3)</div>
+                        <a href="https://amzn.to/4mYlJqK" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">View on Amazon</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Metal Branch Wall Art -->
+                <div class="product-card" data-tags="">
+                    <img src="https://m.media-amazon.com/images/I/712WistSpAL._AC_SX679_.jpg" 
+                         alt="Luccyle Large Metal Branch Wall Decoration" 
+                         class="product-image" 
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-title">Metal Tree Wall Art Set</h3>
+                        <div class="product-price">£38.99</div>
+                        <div class="product-rating">★★★★☆ (4.7)</div>
+                        <a href="https://amzn.to/45u0J52" 
+                           class="amazon-btn" 
+                           target="_blank" 
+                           rel="sponsored nofollow noopener">
+                           <span class="btn-text">Check Price</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <a href="mailto:novaplug.brand@gmail.com" class="contact-email">Contact: novaplug.brand@gmail.com</a>
+            
+            <div class="privacy-message">
+                <strong>Your Privacy Matters:</strong> We do not track your location or personal data. Novaplug is simply an Amazon affiliate showcasing products - no cookies, no tracking, just honest recommendations.
+            </div>
+            
+            <p class="disclaimer">
+                <strong>As an Amazon Associate, Novaplug earns from qualifying purchases.</strong> Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon at the time of purchase will apply to the purchase of the product.
+                <br><br>
+                Novaplug is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. All product links are affiliate links.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const body = document.body;
+        const modeToggle = document.querySelector('.mode-toggle');
+        const styleBtns = document.querySelectorAll('.style-btn');
+        const styleSections = document.querySelectorAll('.style-section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        // Initialize Theme
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            body.setAttribute('data-theme', savedTheme);
+        }
+
+        // Toggle Style Sections
+        function showStyleSection(style) {
+            // Hide all sections
+            styleSections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show the selected section
+            const targetSection = document.querySelector(`#${style}`);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                
+                // Reset filters when switching sections
+                filterProducts('all');
+            }
+            
+            // Update active buttons
+            styleBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.classList.contains(style)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${style}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Smooth scroll to section
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Filter Products
+        function filterProducts(filter) {
+            filterBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.filter === filter) {
+                    btn.classList.add('active');
+                }
+            });
+
+            const activeSection = document.querySelector('.style-section[style="display: block;"]');
+            
+            if (activeSection) {
+                activeSection.querySelectorAll('.product-card').forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = card.dataset.tags.includes(filter) ? 'block' : 'none';
+                    }
+                });
+            }
+        }
+
+        // Initialize Page
+        function initializePage() {
+            initTheme();
+            
+            // Hide all sections first
+            styleSections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Then show the feminine section by default
+            showStyleSection('feminine');
+            
+            // Set initial mode toggle emoji
+            if (body.getAttribute('data-theme') === 'dark') {
+                modeToggle.textContent = '🌞';
+            }
+        }
+
+        // Event Listeners
+        modeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update button emoji
+            modeToggle.textContent = newTheme === 'dark' ? '🌞' : '🌓';
+        });
+
+        styleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const style = btn.classList.contains('feminine') ? 'feminine' : 
+                             btn.classList.contains('masculine') ? 'masculine' : 'unique';
+                showStyleSection(style);
+            });
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const style = link.getAttribute('href').substring(1) || 'feminine';
+                showStyleSection(style);
+            });
+        });
+
+        // Filter Button Events
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterProducts(btn.dataset.filter);
+            });
+        });
+
+        // Initialize
+        initializePage();
+
+        // Simple Analytics (Optional)
+        document.querySelectorAll('a[href*="amzn.to"], a[href*="amazon"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'affiliate_click', {
+                        'event_category': 'Outbound',
+                        'event_label': this.href
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
